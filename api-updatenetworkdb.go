@@ -20,6 +20,7 @@ import (
 )
 
 
+
 type keyResults struct {
 	rowExcelNew        []string
 	locnRecUpdatedNew  int
@@ -69,6 +70,7 @@ func excelSheet2(file *excelize.File, sheet string, c chan keyResults) {
 				break
 			}
 		}
+
 		rowsProcessed++
 		if !header {
 			rowExcel = allRowsExcel.Columns()
