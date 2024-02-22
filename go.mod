@@ -1,4 +1,4 @@
-module catalystxext
+module github.com/naviscom/catalystxext
 
 go 1.21.5
 
