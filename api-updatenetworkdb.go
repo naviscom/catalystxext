@@ -296,7 +296,8 @@ func excelSheet2(file *excelize.File, sheet string, c chan keyResults) {
 
 
 
-func (server *Server) UpdateNetworkDB(ctx *gin.Context) {
+func  UpdateNetworkDB(ctx *gin.Context) {
+
 	os.Mkdir("/app/downloads", 0700)
 	fileHeader, err := ctx.FormFile("file")
 	if err != nil {
